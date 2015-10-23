@@ -3,8 +3,9 @@
 }
 
 body{
-    height: 4000px;
     text-align: center;
+    background-color:#A37519; 
+    background-size: cover;
 }
 
 .myBoxA{
@@ -12,7 +13,7 @@ body{
     top:0; left:0;
     width: 100%;
     backface-visibility: hidden;
-    background-color:aqua;
+    background-color:#FF99CC;
     height:100%;
     transform-style:preserve-3d;
     transform-origin:left center;
@@ -31,4 +32,7 @@ body{
 .myBoxB span{
     display:block;
     transform:rotateY(180deg);
+}
+.warrior{
+    z-index:-2;
 }

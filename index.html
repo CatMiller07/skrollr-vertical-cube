@@ -5,9 +5,16 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body> <!-- https://ihatetomatoes.net/skrollr-cheatsheet/ -->
+        <div class="warrior">
+               <img src="samurai%20on%20horse.jpg">
+
+        </div>
         <div id="page-content">
+            
             <div class="myBoxA" data-center-top="transform: rotateY(0deg)"
                                 data--500-top="transform: rotateY(-90deg)">
+                            
+              
                 Some content in my box a <br>
                 Some content in my box a <br>
                 Some content in my box a <br>
@@ -15,6 +22,7 @@
                 Some content in my box a <br>
                 Some content in my box a <br>
                 Some content in my box a <br>
+                
                 <div class="myBoxB" >
                     <span>
                         Some content in my box b <br>
@@ -24,8 +32,12 @@
                         Some content in my box b <br>
                         Some content in my box b <br>
                         Some content in my box b <br>
+                       <img src="samurai%20girl.jpg">
                     </span>
+                        
+                    
                 </div>
+                
                 
             </div>
             
@@ -34,14 +46,20 @@
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
         <script>
-            var s = skrollr.init();
+           
             var winHeight = window.innerHeight;
             console.log(winHeight);
             $("#page-content").css("height", winHeight*2);
-            $("#page-content").css("margin-top", winHeight*.8);
+           
+            $("#page-content").css("margin-top", winHeight*.3);
             $(".myBoxA").css("height", winHeight*2);
             $(".myBoxB").css("height", winHeight*2);
             $(".myBoxB").css("padding-top", winHeight);
+            var s = skrollr.init();
+           /* $(".myBoxC").css("height", winHeight*2);
+            $(".myBoxC").css("width", winHeight*2);
+            $(".myBoxC").css("padding-top", winHeight); */
+           // $(".myBoxC").attr("data-")
         </script>
     </body>
 </html>
